@@ -1,0 +1,126 @@
+/* Paleta de Cores */
+:root {
+    --azul-escuro: #1F4E79;
+    --azul-claro: #5B9BD5;
+    --cinza-chumbo: #4A4A4A;
+    --branco: #FFFFFF;
+    --verde-suave: #6BAF92;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: var(--branco);
+    color: var(--cinza-chumbo);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: var(--azul-claro);
+}
+
+/* Corpo Principal */
+main {
+    background: var(--azul-claro);
+    text-align: center;
+}
+
+main .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 28px;
+    color: var(--azul-escuro);
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background: var(--cinza-chumbo);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.sobrenos {
+    max-width: 100%;
+}
+
+.container-flex {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os containers */
+    max-width: 100%; /* Largura máxima */
+    margin: auto; /* Centraliza na página */
+    /* padding: 20px; */
+}
+
+.box-2-3 {
+    flex: 2; /* Ocupa 2 partes da divisão */
+    background-color: #1F4E79; /* Azul escuro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box-1-3 {
+    flex: 1; /* Ocupa 1 parte da divisão */
+    background-color: #5B9BD5; /* Azul claro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
