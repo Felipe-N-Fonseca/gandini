@@ -150,10 +150,24 @@ footer p {
     padding: 0 0 0 2.5rem;
 }
 
+.cards {
+    margin: 0 75px;
+}
+
 .card {
     background-color: #1F4E79;
     border-radius: 30px;
-    height: 12rem;
+    height: 35rem;
+}
+
+.card img {
+    width: 80%;
+    MARGIN: 10px;
+    border-radius: 30px;
+}
+
+.card h3 {
+    color: #5B9BD5;
 }
 
 .popup-container {
@@ -199,4 +213,16 @@ footer p {
 .popup-instagram:hover img,
 .popup-whatsapp:hover img {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.foto1-3 {
+    width: 75%;
+    border-radius: 30px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
