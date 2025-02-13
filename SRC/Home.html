@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
-            height: 500px;  /* Altura do mapa */
+            height: 300px;  /* Altura do mapa */
             width: 100%;    /* Largura do mapa */
         }
     </style>
@@ -20,10 +20,10 @@
             <h1>Gandini Soluções</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href=".\Home.html">Início</a></li>
+                    <li><a href=".\Home.html#sobre">Sobre</a></li>
+                    <li><a href=".\Home.html#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,29 +38,29 @@
         <div class="container-flex"> 
             <div class="box-2-3">
                 <div class="centralizar">
-                    <div>
-                        <h2>Gandini: Soluções Financeiras Personalizadas para o Seu Futuro</h2>
+                    <div id="sobre">
+                        <h2>Gandini: Soluções financeiras para o Seu Futuro</h2>
                         <p class="text-justify espaca-texto">
-                            A Gandini, em Embu das Artes, Brasil, oferece soluções personalizadas de financiamento para pessoas,
-                            ajudando-as a alcançar seus objetivos financeiros. Com expertise no mercado local,
-                            transformamos desafios em oportunidades de crescimento e prosperidade.
+                            A Gandini, em Embu das Artes, Brasil, oferece soluções personalizadas de financiamento para pessoas, 
+                            ajudando-as a alcançarem seus objetivos financeiros. Com expertise no mercado local, transformamos 
+                            desafios em oportunidades de crescimento e prosperidade.
                         </p>
                         <h2>Quem Somos?</h2>
                         <p class="text-justify espaca-texto">
-                            Nós somos a Gandini Soluções Financeiras </br>Uma empresa especializada em serviços de limpeza de nome e 
-                            restauração de score.  Nosso trabalho é ajudar pessoas a recuperar sua saúde financeira, oferecendo 
-                            soluções personalizadas que visam a retirada de apontamentos, e reestruturar a reputação financeira 
-                            do cliente ao mercado de crédito
+                            Nós somos a Gandini Soluções Financeiras, uma empresa especializada em serviços de limpeza de nome e 
+                            restauração de score. Nosso trabalho é ajudar pessoas a recuperarem sua saúde financeira, oferecendo 
+                            soluções personalizadas que visam à retirada de apontamentos e à reestruturação da reputação financeira 
+                            do cliente no mercado de crédito.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="box-1-3">
-                <img class="foto1-3" src="..\IMG\Parteum.jpg" alt="">
+                <img class="foto1-3" style="margin: 5% 0;" src="..\IMG\Parteum.jpg" alt="">
             </div>
         </div>
         <!-- Segunda divisão -->
-        <div class="cards" style="background-color: white;">
+        <div id="servicos" class="cards" style="background-color: white;">
             <h2>Nossos serviços</h2>
             <div class="container-flex"> 
                 <div class="box-1-3">
@@ -88,17 +88,15 @@
                         <img src="..\IMG\Acessoriafinanceira.jpg" alt="imagem">
                         <h3>Reestruturação de crédito</h3>
                         <p class="text-justify">
-                            Aumentamos seu score com estratégias personalizadas, regularizando pendências e ajustando seu histórico
-                                financeiro para melhorar suas oportunidades de crédito.
+                            Oferecemos consultoria para educar nossos clientes sobre gestão financeira, ajudando-os a evitar problemas 
+                            futuros e a construir um histórico de crédito saudável.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Mapa -->
-        <div>
-            <div id="map"></div>
-        </div>
+        
+        
     </main>
 
     <!-- Poupups do instagram e whatsapp -->
@@ -116,13 +114,29 @@
     </div>    
 
     <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>Gandini soluções financeiras</p>
-            <p>CNPJ: 31.626.464.0001.31</p>
-            <p>Telefone: +55 11 949099589</p>
-            <p>&copy; 2025 Gandini soluções financeiras. Todos os direitos reservados.</p>
+    <footer id="contato">
+        <div class="container-flex"> 
+            <div class="box-1-3">
+                <div style="margin: 15% 0;">
+                    <p>Gandini soluções financeiras</p>
+                    <p>CNPJ: 31.626.464.0001.31</p>
+                    <p>Telefone: +55 11 949099589</p>
+                    <a href="https://www.instagram.com/gandini_solucoes?igsh=cGwxY21ieHFoZ29z">
+                        <div class="botao" style="background-color: #E1306C; color: white;"><p>Instagram</p></div>
+                    </a>
+                    <a href="https://wa.me/+5511949099589">
+                        <div class="botao" style="background-color: #25D366"><p>WhatsApp</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="box-1-3">
+                <!-- Mapa -->
+                <div class="mapa">
+                    <div id="map" style="border-radius: 30px;"></div>
+                </div>
+            </div>
         </div>
+        <p style="font-size: 14px;">&copy; 2025 Gandini soluções financeiras. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Uso do mapa -->

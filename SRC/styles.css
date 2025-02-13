@@ -17,7 +17,7 @@
 
 /* Corpo da página */
 body {
-    background-color: var(--branco);
+    background-color: var(--azul-claro);
     color: var(--cinza-chumbo);
     line-height: 1.6;
 }
@@ -66,6 +66,7 @@ nav ul li a:hover {
 main {
     background: var(--azul-claro);
     text-align: center;
+    margin: 0 5%;
 }
 
 main .container {
@@ -99,7 +100,11 @@ footer {
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .sobrenos {
@@ -151,7 +156,8 @@ footer p {
 }
 
 .cards {
-    padding: 10px 100px;
+    padding: 20px 100px;
+    margin: 0 -5.5%;
 }
 
 .card {
@@ -229,4 +235,17 @@ footer p {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.mapa {
+    margin: 0 15% 0 -140px;
+}
+
+.botao {
+    background-color: var(--azul-claro);
+    max-width: 22%;
+    border-radius: 30px;
+    margin: 3px auto;
+    /* border: 2px solid var(--cinza-chumbo); */
+    color: var(--azul-escuro);
 }
