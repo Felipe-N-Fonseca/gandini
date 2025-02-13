@@ -151,23 +151,27 @@ footer p {
 }
 
 .cards {
-    margin: 10px 75px;
+    padding: 10px 100px;
 }
 
 .card {
-    background-color: #1F4E79;
+    background-color: #5B9BD5;
     border-radius: 30px;
-    height: 35rem;
+    height: 26rem;
 }
 
 .card img {
-    width: 80%;
+    width: 95%;
     MARGIN: 10px;
     border-radius: 30px;
 }
 
 .card h3 {
-    color: #5B9BD5;
+    color: #1F4E7F;
+}
+
+.card h3 , p {
+    padding: 0 20px;
 }
 
 .popup-container {
@@ -216,8 +220,8 @@ footer p {
 }
 
 .foto1-3 {
-    width: 75%;
-    border-radius: 30px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .centralizar {
