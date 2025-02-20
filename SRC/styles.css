@@ -15,6 +15,10 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 /* Corpo da página */
 body {
     background-color: var(--azul-claro);
@@ -248,4 +252,80 @@ footer a {
     margin: 3px auto;
     /* border: 2px solid var(--cinza-chumbo); */
     color: var(--azul-escuro);
+}
+
+.img-cabecalho {
+    margin: 10px 0 0 0; 
+    background: linear-gradient(98deg, var(--azul-escuro) 70%, var(--azul-claro) 30%); 
+    padding: 0 5%;
+}
+
+/* Smartphones até 600px */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;  /* Empilha os itens em coluna */
+        align-items: center;  /* Centraliza os elementos */
+        text-align: center;  /* Garante que o texto fique centralizado */
+    }
+
+    nav ul {
+        /* flex-direction: column;  Deixa os itens do menu em coluna */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px ;  /* Adiciona espaçamento entre os itens do menu */
+    }
+
+    .sobrenos {
+        content: url("../IMG/sobrenos-cel.png"); /* Caminho da nova imagem */
+    }
+
+    .img-cabecalho {
+        background: linear-gradient(98deg, var(--azul-escuro) 54.3%, var(--azul-claro) 45.7%); 
+    }
+
+    .container-flex{
+        flex-direction: column;  /* Empilha os itens em coluna */
+        align-items: center;  /* Centraliza os elementos */
+        text-align: center;  /* Garante que o texto fique centralizado */
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    .espaca-texto {
+        padding: 0;
+    }
+
+    .card h3 , p {
+        padding: 0;
+    }
+
+    .cards {
+        padding: 20px 0;
+    }
+
+    .card {
+        height: 23rem;
+        padding: 10px;
+    }
+
+    .botao {
+        max-width: 55%;
+    }
+
+    .mapa {
+        margin: -60px -150px 0px -150px;
+    }
+}
+
+/* Tablets em modo retrato */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Ainda não trabalhado */
 }
